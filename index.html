@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Họp Công Ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 85%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #dcdcdc;
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ngày Thứ Hai: Sử dụng rowspan="2" gộp 2 hàng -->
+            <tr>
+                <td rowspan="2">Thứ Hai (20/10)</td>
+                <td>08:00 - 09:30</td>
+                <td>Họp giao ban đầu tuần các Trưởng bộ phận</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:30</td>
+                <td>Đào tạo quy trình công việc cho nhân sự mới</td>
+            </tr>
+
+            <!-- Ngày Thứ Ba: Sử dụng colspan="2" cho cuộc họp kéo dài cả ngày/nhiều ca -->
+            <tr>
+                <td>Thứ Ba (21/10)</td>
+                <td colspan="2">Đánh giá chiến lược Quý IV (Kéo dài toàn bộ buổi sáng và chiều)</td>
+            </tr>
+
+            <!-- Ngày Thứ Tư: Các cuộc họp thông thường -->
+            <tr>
+                <td rowspan="2">Thứ Tư (22/10)</td>
+                <td>09:00 - 11:00</td>
+                <td>Báo cáo tiến độ dự án Website</td>
+            </tr>
+            <tr>
+                <td>15:00 - 16:30</td>
+                <td>Gặp mặt đối tác và nghiệm thu hợp đồng</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
